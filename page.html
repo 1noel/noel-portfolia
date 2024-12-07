@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+  <div class="swiper-container" style="height: 700px;">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide bg-[url('images/1w.webp')] bg-cover bg-center">
+              <div class="bg-black bg-opacity-50 p-8 text-white rounded-lg h-full flex flex-col items-center justify-center">
+                  <h1 class="text-4xl font-bold mb-4 text-center">Empowering Communities with Sustainable Solutions</h1>
+                  <p class="text-lg mb-6 text-center">Global Green Project offers climate-smart products and services that drive environmental restoration and sustainable agriculture.</p>
+                  <a href="#" class="bg-green-500 px-6 py-3 rounded text-lg hover:bg-green-400">Explore Our Solutions</a>
+              </div>
+          </div>
+          <div class="swiper-slide bg-[url('images/6.jpeg')] bg-cover bg-center">
+              <div class="bg-black bg-opacity-50 p-8 text-white rounded-lg h-full flex flex-col items-center justify-center">
+                  <h1 class="text-4xl font-bold mb-4 text-center">Empowering Communities with Sustainable Solutions</h1>
+                  <p class="text-lg mb-6 text-center">Global Green Project offers climate-smart products and services that drive environmental restoration and sustainable agriculture.</p>
+                  <div>
+                      <a href="#" class="bg-green-500 px-6 py-3 rounded text-lg hover:bg-green-400">Explore Our Solutions</a>
+                      <a href="#" class="ml-4 bg-blue-500 px-6 py-3 rounded text-lg hover:bg-blue-400">Learn About Our Impact</a>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-slide bg-[url('images/3.jpg')] bg-cover bg-center">
+              <div class="bg-black bg-opacity-50 p-8 text-white rounded-lg h-full flex flex-col items-center justify-center">
+                  <h1 class="text-4xl font-bold mb-4 text-center">Empowering Communities with Sustainable Solutions</h1>
+                  <p class="text-lg mb-6 text-center">Global Green Project offers climate-smart products and services that drive environmental restoration and sustainable agriculture.</p>
+                  <a href="#" class="bg-green-500 px-6 py-3 rounded text-lg hover:bg-green-400">Join Our Mission</a>
+              </div>
+          </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+      var swiper = new Swiper('.swiper-container', {
+          pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+          },
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+      });
+  </script>
+</body>
+</html>

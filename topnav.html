@@ -1,0 +1,65 @@
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  />
+  </head>
+  
+
+  <!-- Header Section -->
+  <header class="bg-green-800 text-white fixed top-0 left-0 right-0 w-full p-4 z-50">
+    <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <a href="/index.html" class="text-xl sm:text-2xl font-bold flex items-center">
+                <img src="images/logo.png" alt="Global Green Project Logo" class="h-6 sm:h-8 mr-2">
+                Global Green
+            </a>
+        <nav class="hidden md:flex md:flex-row md:space-x-4" id="main-nav">
+            <a href="index.html" class="hover:text-gray-400">Home</a>
+            <a href="about.html" class="hover:text-gray-400">About Us</a>
+            <a href="products.html" class="hover:text-gray-400">Products</a>
+            <a href="services.html" class="hover:text-gray-400">Services</a>
+            <a href="impact.html" class="hover:text-gray-400">Impact</a>
+            <a href="involved.html" class="hover:text-gray-400">Get Involved</a>
+            <a href="contact.html" class="hover:text-gray-400">Contact Us</a>
+        </nav>
+        <button class="bg-blue-500 hover:bg-blue-600 px-3 py-1 sm:px-4 sm:py-2 rounded text-sm sm:text-base hidden md:block">Join Eco-Bring</button>
+
+        <!-- Menu button (changes to close button when menu is open) -->
+        <button id="menu-btn" class="text-white md:hidden">
+           <i class="fa fa-bars" id="menu-icon"></i>
+        </button>
+
+        <nav id="mobile-menu" class="w-full md:hidden  flex-col space-y-4 mt-4 hidden">
+            <a href="index.html" class="hover:text-gray-400 block">Home</a>
+            <a href="about.html" class="hover:text-gray-400 block">About Us</a>
+            <a href="products.html" class="hover:text-gray-400 block">Products</a>
+            <a href="services.html" class="hover:text-gray-400 block">Services</a>
+            <a href="impact.html" class="hover:text-gray-400 block">Impact</a>
+            <a href="involved.html" class="hover:text-gray-400 block">Get Involved</a>
+            <a href="contact.html" class="hover:text-gray-400 block">Contact Us</a>
+            <button class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded text-sm sm:text-base w-full">Join Eco-Bring</button>
+        </nav>
+    </div>
+</header>
+
+
+<style>
+    @media (max-width: 768px) {
+        #main-nav {
+            display: none;
+        }
+      
+        #mobile-menu.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: #166534;
+            padding: 1rem;
+        }
+        #mobile-menu.active a {
+            padding: 0.5rem 0;
+        }
+    }
+</style>
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Green Project - Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans leading-normal tracking-normal bg-gray-100">
+
+    <!-- Header -->
+     <div id="topnav-placeholder"></div>
+
+   <!-- Products Section -->
+   <section id="products" class="py-12 bg-gray-100 mt-10 mx-3">
+    <div class="container mx-auto text-center">
+        <div class="max-w-2xl mx-auto mb-12">
+            <h2 class="text-4xl font-bold text-green-800 mb-4">Our Sustainable Products</h2>
+            <p class="text-xl font-medium text-gray-900 leading-relaxed">Explore our range of eco-friendly products designed to empower communities, foster sustainable growth, and protect our precious environment.</p>
+        </div>
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded shadow">
+                <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tree Seedlings" class="w-full h-48 object-cover mb-4 rounded">
+                <h3 class="text-xl font-bold text-green-800">Tree Seedlings</h3>
+                <p class="mt-2 text-gray-600">Choose from a variety of tree species, including fruit-bearing trees, native species, and agroforestry varieties.</p>
+                <button onclick="openModal('Tree Seedlings')" class="mt-4 inline-block bg-green-800 hover:bg-green-600 text-white px-4 py-2 rounded">Shop Now</button>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Home & School Vegetable Gardens" class="w-full h-48 object-cover mb-4 rounded">
+                <h3 class="text-xl font-bold text-green-800">Home & School Vegetable Gardens</h3>
+                <p class="mt-2 text-gray-600">Choose from a variety of vegetable garden kits, including easy-to-install options for homes and schools.</p>
+                <button onclick="openModal('Home & School Vegetable Gardens')" class="mt-4 inline-block bg-green-800 hover:bg-green-600 text-white px-4 py-2 rounded">Shop Now</button>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_z4SvGmgwcK0UjIfBuKr5QJG4sjS5aK1_Zw&s" alt="Irrigation Tool Kits" class="w-full h-48 object-cover mb-4 rounded">
+                <h3 class="text-xl font-bold text-green-800">Irrigation Tool Kits</h3>
+                <p class="mt-2 text-gray-600">Choose from a variety of efficient irrigation systems to make the most of your water resources.</p>
+                <button onclick="openModal('Irrigation Tool Kits')" class="mt-4 inline-block bg-green-800 hover:bg-green-600 text-white px-4 py-2 rounded">Shop Now</button>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Organic Fertilizers" class="w-full h-48 object-cover mb-4 rounded">
+                <h3 class="text-xl font-bold text-green-800">Organic Fertilizers</h3>
+                <p class="mt-2 text-gray-600">Enhance soil fertility with our range of organic fertilizers, perfect for sustainable agriculture.</p>
+                <button onclick="openModal('Organic Fertilizers')" class="mt-4 inline-block bg-green-800 hover:bg-green-600 text-white px-4 py-2 rounded">Shop Now</button>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Composting Systems" class="w-full h-48 object-cover mb-4 rounded">
+                <h3 class="text-xl font-bold text-green-800">Composting Systems</h3>
+                <p class="mt-2 text-gray-600">Turn organic waste into nutrient-rich compost with our easy-to-use composting systems.</p>
+                <button onclick="openModal('Composting Systems')" class="mt-4 inline-block bg-green-800 hover:bg-green-600 text-white px-4 py-2 rounded">Shop Now</button>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <img src="images/2.jpg" alt="Sustainable Pest Control" class="w-full h-48 object-cover mb-4 rounded">
+                <h3 class="text-xl font-bold text-green-800">Sustainable Pest Control</h3>
+                <p class="mt-2 text-gray-600">Protect your crops with our eco-friendly pest control solutions that don't harm the environment.</p>
+                <button onclick="openModal('Sustainable Pest Control')" class="mt-4 inline-block bg-green-800 hover:bg-green-600 text-white px-4 py-2 rounded">Shop Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full hidden flex items-center justify-center">
+        <div class="p-5 border w-1/3 shadow-lg rounded-md bg-white">
+            <div class="mt-3 text-center">
+                <h3 class="text-lg leading-6 font-medium text-gray-900" id="modalTitle"></h3>
+                <div class="mt-2 px-7 py-3">
+                    <form id="userInfoForm">
+                        
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="mt-4 block w-full  border-2 border-black rounded-md py-2 px-3 focus:outline-none" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" class="mt-4 block w-full  border-2 border-black rounded-md py-2 px-3 focus:outline-none" required>
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" class="mt-4 block w-full  border-2 border-black rounded-md py-2 px-3 focus:outline-none" required>
+                        <p id="phoneHint" class="text-sm text-red-500 mt-1 hidden">Please enter numbers only</p>
+
+                        <div>
+                            <button type="button" id="cancelButton" class="mt-4 inline-flex justify-center rounded-md border border-transparent shadow-sm px-10 py-2 bg-gray-600 text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 sm:text-sm">Cancel</button>
+                            <button type="submit" class="mt-4 inline-flex justify-center rounded-md border border-transparent shadow-sm px-10 py-2 bg-green-800 text-base font-medium text-white hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800 sm:text-sm">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>Phone: +250 123 456 | Email: info@globalgreenproject.com | Address: Kigali, Rwanda</p>
+            <div class="mt-2 space-x-4">
+                <a href="#" class="hover:text-gray-400">Facebook</a>
+                <a href="#" class="hover:text-gray-400">Twitter</a>
+                <a href="#" class="hover:text-gray-400">Instagram</a>
+                <a href="#" class="hover:text-gray-400">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/footertopnav.js"></script>
+    <script>
+        function openModal(productName) {
+            document.getElementById('modalTitle').textContent = 'Order ' + productName;
+            document.getElementById('modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.add('hidden');
+        }
+
+        document.getElementById('userInfoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would typically send the form data to a server
+            alert('Thank you for your order!');
+            closeModal();
+        });
+
+        document.getElementById('modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        document.getElementById('cancelButton').addEventListener('click', function() {
+            closeModal();
+        });
+
+        document.getElementById('phone').addEventListener('input', function() {
+            const phoneHint = document.getElementById('phoneHint');
+            if (this.value.length > 0) {
+                phoneHint.classList.remove('hidden');
+            } else {
+                phoneHint.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+
+</html>
